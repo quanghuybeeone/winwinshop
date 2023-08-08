@@ -1,0 +1,93 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <div class="d-flex">
+        <h1 class="h2">Products</h1>
+        <button class="btn btn-primary mx-2 mb-1 add-product" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">
+            <b>+ Add Product</b>
+        </button>
+    </div>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+                Share
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+                Export
+            </button>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h2>Danh sách sản phẩm</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tên sp</th>
+                    <th scope="col">Hình sp</th>
+                    <th scope="col">Mô tả</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Điều khiển</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="7" class="text-center">Chưa có sản phẩm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">
+                    Thêm mới sản phẩm
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Tên sản phẩm</label>
+                    <input type="email" class="form-control prd_name" placeholder=""/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Danh mục</label>
+                    <select class="form-select id_cate" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Giá</label>
+                    <input type="email" class="form-control prd_price" placeholder=""/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mô tả</label>
+                    <input type="email" class="form-control description" placeholder=""/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Số lượng</label>
+                    <input type="email" class="form-control amount" placeholder=""/>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">Ảnh(4)</label>
+                    <input type="file" multiple class="form-control prd_img">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-add-product" data-bs-dismiss="modal">Thêm mới</button>
+            </div>
+        </div>
+    </div>
+</div>

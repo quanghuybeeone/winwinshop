@@ -1,0 +1,39 @@
+Lấy
+// callApi('products/ALL', 'GET').then(res=>console.log(res.data))
+
+Thêm
+// callApi('create-product', 'POST',{
+//     id_cate: 333,
+//     prd_name: 'Huyngo',
+//     prd_img_1: 'anh-1.png',
+// }).then(res=>console.log(res.data))
+
+Xóa
+// callApi('delete-product', 'DELETE', {
+//     id: 26
+// }
+// ).then(res=>console.log(res))
+
+Sửa
+// callApi('edit-product', 'PUT',{
+//     id: 27,
+//     prd_name: 'Huyngo123333',
+//     prd_img_1: 'anh-4.png',
+// }).then(res=>console.log(res.data))
+
+Upload
+// html:
+// <input type="file" id="myFileInput" multiple />
+
+// js:
+// const myFileInput = document.getElementById("myFileInput");
+// myFileInput.addEventListener("change", function () {
+// // Tạo đối tượng FormData để đóng gói các tệp tải lên
+// const formData = new FormData();
+// for (let i = 0; i < myFileInput.files.length; i++) {
+//     let txtname = Date.now() + i + "_" + myFileInput.files[i].name;
+//     console.log(txtname);
+//     formData.append("prd_img", myFileInput.files[i], txtname);
+// }
+//     callApi('upload-img-product', 'POST', formData).then(res=>console.log(res))
+// });

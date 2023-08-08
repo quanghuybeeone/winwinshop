@@ -1,0 +1,60 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidenav>a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav>a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.sidenav .delete-item {
+    color: #818181;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.sidenav .box-cart {
+    min-height: 10vh;
+}
+
+.sidenav .cart {
+    min-height: 10vh;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 10px;
+    }
+
+    .sidenav>a {
+        font-size: 18px;
+    }
+}

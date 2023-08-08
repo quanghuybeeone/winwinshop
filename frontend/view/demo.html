@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button class="btn-add-to-cart">nè</button>
+      <input type="text" value="3" />
+      <p
+        class="child"
+        style="background-color: salmon; width: 100px; height: 100px"
+      >
+        Child 1
+      </p>
+      <input type="text" value="1" />
+      <input class="id-prd" type="text" value="999" />
+    </div>
+    <div>
+      <button class="btn-add-to-cart">nè</button>
+      <input type="text" value="3" />
+      <p
+        class="child"
+        style="background-color: salmon; width: 100px; height: 100px"
+      >
+        Child 1
+      </p>
+      <input type="text" value="1" />
+      <input hidden class="id-prd" type="text" value="2" />
+    </div>
+
+    <script>
+      const btn_add_to_carts = document.getElementsByClassName("btn-add-to-cart");
+      for (btn_add_to_cart of btn_add_to_carts) {
+        console.log(btn_add_to_cart);
+        btn_add_to_cart.addEventListener("click", (event) => {
+          console.log(
+            event.target.parentElement.getElementsByClassName("id-prd")[0].value
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
